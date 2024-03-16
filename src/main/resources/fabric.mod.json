@@ -1,31 +1,29 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "bagel",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Bagel",
+	"description": "Like a bagel it has everything.",
 	"authors": [
-		"Me!"
+		"NetUserGet"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "GPL-3.0",
+	"icon": "assets/bagel/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"net.netuserget.bagel.BagelMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"net.netuserget.bagel.BagelModClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"bagel.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "bagel.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -34,8 +32,5 @@
 		"minecraft": "~1.20.4",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }

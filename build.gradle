@@ -22,7 +22,7 @@ loom {
     splitEnvironmentSourceSets()
 
 	mods {
-		"modid" {
+		"bagel" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
