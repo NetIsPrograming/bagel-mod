@@ -14,10 +14,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.netuserget.bagel.BagelMod"
+			"com.netuserget.bagel.BagelMod"
 		],
 		"client": [
-			"net.netuserget.bagel.BagelModClient"
+			"com.netuserget.bagel.BagelModClient"
 		]
 	},
 	"mixins": [
