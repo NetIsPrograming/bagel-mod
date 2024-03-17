@@ -1,4 +1,4 @@
-package com.example;
+package com.netuserget.bagel;
 
 import net.fabricmc.api.ClientModInitializer;
 
