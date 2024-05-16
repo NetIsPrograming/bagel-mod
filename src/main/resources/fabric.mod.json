@@ -13,6 +13,9 @@
   "icon": "assets/bagel/icon.png",
   "environment": "*",
   "entrypoints": {
+    "fabric-datagen": [
+      "com.netuserget.bagel.BagelDataGenerator"
+    ],
     "main": [
       "com.netuserget.bagel.BagelMod"
     ],

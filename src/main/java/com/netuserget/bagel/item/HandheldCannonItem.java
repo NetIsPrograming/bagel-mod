@@ -16,6 +16,6 @@ public class HandheldCannonItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         user.playSound(SoundEvents.BLOCK_ANVIL_LAND, 1.0F, 1.0f);
-        return super.use(world, user, hand);
+        return TypedActionResult.success(user.getStackInHand(hand), false);
     }
 }
