@@ -3,6 +3,7 @@
   "package": "com.netuserget.bagel.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "PlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
