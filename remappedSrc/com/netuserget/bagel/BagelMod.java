@@ -1,5 +1,6 @@
 package com.netuserget.bagel;
 
+import com.netuserget.bagel.item.HandheldCannonItem;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.registry.Registries;
@@ -14,12 +15,15 @@ public class BagelMod implements ModInitializer {
     // That way, it's clear which mod wrote info, warnings, and errors.
     public static final String MODID = "bagel";
     public static final Logger LOGGER = LoggerFactory.getLogger("bagel");
+    public static final HandheldCannonItem HANDHELDCANNON_ITEM = new HandheldCannonItem(new Settings());
+
 
     @Override
     public void onInitialize() {
         // This code runs as soon as Minecraft is in a mod-load-ready state.
         // However, some things (like resources) may still be uninitialized.
         // Proceed with mild caution.
+        Registry.register(Registries.ITEM, new Identifier(MODID, "cannon_item"), HANDHELDCANNON_ITEM);
         LOGGER.info("Its like a everything bagel! (BagelMod Initialization)");
     }
 }
