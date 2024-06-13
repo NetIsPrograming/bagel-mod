@@ -24,8 +24,6 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 
     @Shadow public abstract ItemStack getEquippedStack(EquipmentSlot slot);
 
-    @Shadow protected abstract void attackLivingEntity(LivingEntity target);
-
     @Inject(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerEntity;updateTurtleHelmet()V"))
     private void bagel$BunnyBoots(CallbackInfo ci) {
         updateBunnyBoots();
